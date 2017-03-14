@@ -4,7 +4,7 @@ export default gql`
   {
     word {
       term
-      description
+      definition
       group
     }
   }

@@ -1,14 +1,18 @@
 import React from 'react';
 import Header from './Header';
-import StatusPage from './StatusPage';
+import EntryPage from './EntryPage';
 
 const App = (props) => {
+
   return (
     <div className="container">
       <Header />
-      {props.children}
+      {console.log(props)}
+      { props.location.pathname !== '/'
+      ? props.children
+      : <EntryPage src={require('../images/111.jpg')} />}
     </div>
-  )
-}
+  );
+};
 
 export default App;
