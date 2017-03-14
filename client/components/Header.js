@@ -15,13 +15,14 @@ class Header extends Component {
   renderButtons() {
     const { loading, user } = this.props.data;
     if (loading) {
-      return <div />
+      return <div />;
     }
 
     if (user) {
       return (
         <div>
           <li className="left"><Link to="/dashboard">Dashboard</Link></li>
+          <li className="left"><Link to="/profile">Profile</Link></li>
           <li><a onClick={this.onLogoutClick.bind(this)}>Logout</a></li>
         </div>
       );

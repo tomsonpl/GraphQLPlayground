@@ -46,7 +46,7 @@ class AuthForm extends Component {
               )
             })}
           </div>
-          <button className="btn">Submit</button>
+          <button className="btn waves-effect waves-light">Submit</button>
         </form>
       </div>
     )
