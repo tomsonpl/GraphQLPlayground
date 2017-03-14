@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class WordsForm extends Component {
+class WordsList extends Component {
   constructor(props) {
     super(props);
 
@@ -50,4 +50,4 @@ class WordsForm extends Component {
   }
 }
 
-export default WordsForm;
+export default WordsList;
